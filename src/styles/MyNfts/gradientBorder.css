@@ -1,0 +1,123 @@
+.Legendary-border {
+    --borderWidth: 3px;
+    /*background: #23262F;*/
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;*/
+    position: relative;
+    border-radius: 12px;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    transition: transform .5s ease;
+    max-width: 260px;
+    display: block;
+    margin: auto;
+}
+.Legendary-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #FF8C00, #FF8C00, #1DA1F2);
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
+    border-radius: 12px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.Legendary-border:hover:not([disabled]) {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.Epic-border {
+    --borderWidth: 3px;
+    /*background: #23262F;*/
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;*/
+    position: relative;
+    border-radius: 12px;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    transition: transform .5s ease;
+    max-width: 260px;
+    display: block;
+    margin: auto;
+}
+.Epic-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #AA00FF, #1DA1F2);
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
+    border-radius: 12px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.Epic-border:hover:not([disabled]) {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.Rare-border {
+    --borderWidth: 3px;
+    /*background: #23262F;*/
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) !important;*/
+    position: relative;
+    border-radius: 12px;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    transition: transform .5s ease;
+    max-width: 260px;
+    display: block;
+    margin: auto;
+}
+.Rare-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #00FF00, #1DA1F2);
+    /*background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
+    border-radius: 12px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.Rare-border:hover:not([disabled]) {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.Common-border {
+    transition: transform .5s ease;
+    max-width: 260px;
+    display: block;
+    margin: auto;
+}
+
+.Common-border:hover:not([disabled]) {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
